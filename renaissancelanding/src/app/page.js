@@ -5,6 +5,7 @@ import { MdAirplanemodeActive } from "react-icons/md";
 import BachelorCard from "../../components/bachelorCard";
 import MastersCard from "../../components/mastersCard";
 import Goodbye from "../../components/goodbye";
+import SchoolsCard from "../../components/schoolsCard";
 
 
 const infoItems = [
@@ -15,7 +16,7 @@ const infoItems = [
 export default function Home() {
   return (
     <main className="flex flex-col items-center xl:p-10 p-2">
-      <div className="z-10 max-w-5xl w-full items-center justify-start font-mono text-sm lg:flex">
+      <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex">
         <div className="fixed left-0 top-0 flex xl:h-24 lg:h-24 h-28 w-full justify-center lg:static lg:w-auto lg:rounded-xl lg:p-4 bg-gradient-to-b bg from-white via-white dark:from-black dark:via-black lg:bg-none">
           <Image
               src="/RELogo-black.png"
@@ -41,10 +42,10 @@ export default function Home() {
       </div>
       <div className="w-full">
           <div className="ml-6 mt-36 xl:mt-48 flex flex-col place-items-center">
-              <a className="font-bold xl:text-5xl lg:text-5xl text-3xl justify-start items-center w-full bg-gradient-to-r from-orange-500 to-yellow-500 text-transparent bg-clip-text">
+              <a className="xl:font-bold font-semibold tracking-tight xl:text-5xl lg:text-5xl text-3xl justify-start items-center w-full h-24 bg-gradient-to-r from-orange-500 to-yellow-500 text-transparent bg-clip-text">
                   We are Renaissance Engineering Programme.
               </a>
-              <a className="w-full mt-5">
+              <a className="w-full mt-5 tracking-tight">
                   A flagship engineering programme by Nanyang Technological University.
               </a>
           </div>
@@ -84,20 +85,29 @@ export default function Home() {
               {infoItems.map((item, index) => (
                   <div key={index} className="flex xl:flex-col flex-row place-items-center gap-3">
                       {item.icon}
-                      <a className="text-lg xl:text-2xl text-start xl:text-center">{item.text}</a>
+                      <a className="text-lg xl:text-2xl text-start xl:text-center tracking-tight">{item.text}</a>
                   </div>
               ))}
           </div>
-          <div className="relative mr-6 mt-10 mb-6 flex flex-col place-items-center">
-              <a className="font-bold xl:text-5xl lg:text-5xl text-3xl text-end items-center w-full bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">
+          <div className="relative mr-6 mt-16 mb-6 flex flex-col place-items-center">
+              <a className="xl:font-bold font-semibold tracking-tight xl:text-5xl lg:text-5xl text-3xl text-end items-center w-full bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">
                   A unique dual-degree programme.
               </a>
-              <a className="w-full text-end mt-5">
+              <a className="w-full text-end mt-5 tracking-tight">
                   REP students are awarded a Bachelor of Engineering Science and a Masters of Science (Technology Management)
               </a>
           </div>
           <BachelorCard/>
           <MastersCard/>
+          <div className="relative ml-6 mt-16 mb-6 flex flex-col place-items-center">
+              <a className="xl:font-bold font-semibold tracking-tight xl:text-5xl lg:text-5xl text-3xl text-start items-center w-full bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
+                  Global perspective.
+              </a>
+              <a className="w-full text-start mt-5 tracking-tight">
+                  Year 3 overseas study provides a one-of-a-kind global experience.
+              </a>
+          </div>
+          <SchoolsCard/>
           <Goodbye/>
           <div className="h-48 w-full"/>
       </div>

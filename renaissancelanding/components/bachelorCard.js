@@ -19,8 +19,8 @@ function BachelorCard() {
     return (
         <Card className="m-6 border border-blue-300">
             <CardHeader>
-                <CardTitle>Bachelor of Engineering Science</CardTitle>
-                <CardDescription>Specialise in any of the following engineering majors:</CardDescription>
+                <CardTitle className="text-semibold text-xl">Bachelor of Engineering Science</CardTitle>
+                <CardDescription className="tracking-tight">Specialise in any of the following engineering majors:</CardDescription>
                 <Badge className="bg-gradient-to-r from-orange-400 to-yellow-400 w-22 border-0">Accredited by IES under the Washington Accord</Badge>
             </CardHeader>
             <CardContent className="flex justify-between items-center">

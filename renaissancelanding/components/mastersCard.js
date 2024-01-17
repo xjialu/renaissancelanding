@@ -17,8 +17,8 @@ function MastersCard() {
     return (
         <Card className="m-6 border border-orange-300">
             <CardHeader>
-                <CardTitle>Master of Science (Technology Management)</CardTitle>
-                <CardDescription>Issued by Nanyang Business School</CardDescription>
+                <CardTitle className="text-semibold text-xl">Master of Science (Technology Management)</CardTitle>
+                <CardDescription className="tracking-tight">Issued by Nanyang Business School</CardDescription>
             </CardHeader>
         </Card>
 

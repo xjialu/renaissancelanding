@@ -39,6 +39,26 @@ const specialisations = [
         value: "electrical and electronic engineering",
         label: "Electrical and Electronic Engineering",
     },
+    {
+        value: "mechanical engineering",
+        label: "Mechanical Engineering",
+    },
+    {
+        value: "materials engineering",
+        label: "Materials Engineering",
+    },
+    {
+        value: "chemical and biomolecular engineering",
+        label: "Chemical and Biomolecular Engineering",
+    },
+    {
+        value: "environmental engineering",
+        label: "Environmental Engineering",
+    },
+    {
+        value: "bioengineering",
+        label: "Bioengineering",
+    },
 ]
 
 export default function ComboboxDemo() {
@@ -52,7 +72,7 @@ export default function ComboboxDemo() {
                     variant="outline"
                     role="combobox"
                     aria-expanded={open}
-                    className="w-[200px] justify-between"
+                    className="flex flex-wrap justify-between"
                 >
                     {value
                         ? specialisations.find((spec) => spec.value === value)?.label

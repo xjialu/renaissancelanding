@@ -54,7 +54,7 @@ export default function Home() {
                   <Image
                       src="/R12.jpg"
                       alt="r12"
-                      className="object-cover w-full h-full rounded"
+                      className="object-contain w-full h-full rounded-lg"
                       width={400}
                       height={300}
                       priority
@@ -83,9 +83,9 @@ export default function Home() {
           </div>
           <div className="grid xl:grid-cols-3 grid-rows-3 gap-6 xl:place-items-center place-items-start px-5 xl:pl-0">
               {infoItems.map((item, index) => (
-                  <div key={index} className="flex xl:flex-col flex-row place-items-center gap-3">
-                      {item.icon}
+                  <div key={index} className="flex xl:flex-col flex-row place-items-center justify-between gap-3">
                       <a className="text-lg xl:text-2xl text-start xl:text-center tracking-tight">{item.text}</a>
+                      {item.icon}
                   </div>
               ))}
           </div>
